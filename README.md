@@ -1,11 +1,11 @@
 # Hora Certa - WHMSonic
 ![Imagem do Hora Certa pro WHMSonic](http://i.imgur.com/QhQ2rRk.png)
 
-## Status
+## Changelog
 * 0.1 (Beta) - Laçamento [20/11/2016]
 * 0.2 (Beta) - Correção da atividade Cron [24/11/2016]
 * 0.3 (Beta) - Configurações (de voz, repetição e playlist) realizadas são exibidas quando sistema ativo. [06/01/2017]
-* Projeto descontinuado!
+* **Projeto abandonado! [06/01/2017]** :exclamation:
 
 ## Usando
 ###### Instalando
