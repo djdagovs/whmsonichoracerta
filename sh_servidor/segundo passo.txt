@@ -1,0 +1,6 @@
+pico horacerta_config.php
+
+<?php
+$ip = 'ip do servidor'; //ip servidor
+$pass = 'senha root'; //senha whm
+?>

@@ -1,0 +1,78 @@
+<? header ('Content-type: text/html; charset=utf-8'); foreach ($_REQUEST as $key=>$val) {${$key}=$val;} ?><head>
+<link type="text/css" rel="stylesheet" href="cstyle.css?r=<? $chars = "abcdefghijkmnopqrstuvwxyz023456789"; srand((double)microtime()*1000000); $i = 0; $csrou = '' ; while ($i <= 7) { $num = rand() % 33; $tmp = substr($chars, $num, 1);$csrou = $csrou . $tmp;$i++;}$styrou = $csrou; echo $styrou; ?>" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.stil1 {	color: #FF0000;
+	font-size: 9px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<?
+// License Check
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/lic.php";
+if($lic == "") {
+echo "<br><br><div align=center class=critical width=95%>License Error !</div>";
+exit;
+}
+// License Check
+$cheat254 = $_ENV['REMOTE_USER'];
+$cheat254 = trim($cheat254);
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/inc/dbs.php";
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/lng.php";
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/languages/$lang.lang";
+$sql78 = "SELECT * FROM radio WHERE rad_username='$cheat254'";
+$result78 = mysql_query($sql78) or die("Error 95!");
+if(mysql_num_rows($result78) == "0"){ echo "<div align=center class=critical>ERROR: We are sorry! You dont have a radio hosting or service. Please contact your hosting provider.</div>"; }
+while($row7=mysql_fetch_array($result78)){$active = $row7[active];}
+if($active != "yes") {
+echo "<div align=center class=critical>ERROR</div>"; exit; }
+?>
+
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F6F6F6">
+  <tr>
+    <td><div id="acpmenu">
+      <div><img src="images/af.jpg"></div>
+      <ul><li><a href='tools/edit.php' target="mainFrame"><img src="images/tedit.png" width="16" height="15" border="0" /></a><a href='tools/list.php?cmd=edit' target="mainFrame"> <?echo"$client_set2";?></a></li>
+        <li><a href='tools/list.php' target="mainFrame"><img src="images/list.jpg" width="16" height="16" border="0" /> <?echo"$client_list";?></a></li>
+        <li><a href='tools/gstats.php' target="mainFrame"><img src="images/gst.png"border="0" /> <?echo"$grap";?></a></li>
+        <li><a href='tools/sap_geo/sap_cmd.php' target="mainFrame"><img src="images/google.jpg"border="0" /> <?echo"$gmaps";?></a></li>
+        <li><a href='tools/stats_live.php' target="mainFrame"><img src="images/strl.png"border="0" /> <?echo"$onlisr";?></a></li>
+      </ul>
+      <div><img src="images/ms.jpg" width="228" height="39"></div>
+      <ul><li><a href='tools/autodj.php?dj=setup&list=off' target="mainFrame"><img src="images/adset.png" width="16" height="16" border="0" /> <?echo"$sonic_atls";?></a></li>
+        <li><a href='tools/autodj.php' target="mainFrame"><img src="images/autodjl.jpg" width="16" height="16" border="0" /> <?echo"$im11";?></a></li>
+        <li><a href='tools/playlist_manager.php' target="mainFrame"><img src="images/playlistm.jpg" width="16" height="16" border="0" /> <?echo"$playlistml";?></a></li>
+        <li><a href='tools/dj_manager.php' target="mainFrame"><img src="images/djmanager.jpg" width="16" height="16" border="0" /></a><a href='tools/dj_manager.php' target="mainFrame"> <?echo"$djman";?></a></li>
+		<li><a href='tools/adv_main.php' target="mainFrame"><img src="images/introz.jpg" width="16" height="16" border="0" /> <?echo"$client_intro";?></a></li>
+        <li><a href='tools/relay.php' target="mainFrame"><img src="images/relay.png" width="16" height="16" border="0" /> <?echo"$cpi13";?></a></li>
+        <li><a href='tools/bw.php' target="mainFrame"><img src="images/band.jpg" width="16" height="16" border="0" /> <?echo"$bandl";?></a></li>
+        <li><a href='tools/sonic_configuration.php' target="mainFrame"><img src="images/conf.jpg" width="16" height="16" border="0" /></a><a href='tools/sonic_configuration.php' target="mainFrame"> <?echo"<font color=0000FF>$sonic_config_client</font>";?></a></li>
+      </ul>
+        <div><img src="images/wi.jpg" width="228" height="39"></div>
+        <ul>
+          <li><a href='tools/flashplayer.php' target="mainFrame"><img src="images/flashp.jpg" width="16" height="16" border="0" /> <?echo"$cmdflash";?></a></li>
+          <li><a href='tools/copy_html5.php' target="mainFrame"><img src="images/h5.png" width="16" height="16" border="0" /> Copy/Paste HTML5 Player</a></li>
+          <li><a href='tools/shtml5.php' target="mainFrame"><img src="images/h5.png" width="16" height="16" border="0" /> Simple HTML5 Player</a></li>
+          <li><a href='tools/ahtml5.php' target="mainFrame"><img src="images/h5.png" alt="" width="16" height="16" border="0" /> Advanced HTML5 Player</a><a href='tools/jwplayer.php' target="mainFrame"></a></li>
+          <li><a href='tools/links.php' target="mainFrame"><img src="images/links.jpg" width="16" height="16" border="0" /> <?echo"$cmdlink";?></a></li>
+          <li><a href='http://help.sonicpanel.com/index.php/category/whmsonic-full-website-scripts' target="_blank"><img src="images/fullscripts.jpg" width="16" height="16" border="0" /> <?echo"$cmdfull";?></a></li>
+          <div><img src="images/mhelp.jpg" width="228" height="39" /></div>
+          <ul>
+            <li><a href='tools/faq.php' target="mainFrame"><img src="images/faq.jpg" width="16" height="16" border="0" /> <?echo"$faql";?></a> <span class="stil1">v2</span></li>
+          </ul>
+          </li>
+        </ul>
+        </div></td>
+  </tr>
+</table>
+</html>
+      <br>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Hora Certa - Instalação</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="mt-1">
+        <h1>Hora Certa - Intalação</h1>
+      </div>
+      <p>Instalar:</p>
+      <p><code>cd ~</code></p>
+      <p><code>wget https://ninjashost.github.io/whmsonichoracerta/sh_servidor/install-hc.sh</code></p>
+      <p><code>chmod +x install-hc.sh</code></p>
+      <p><code>./install-hc.sh</code></p>
+      <p>Configurar:</p>
+      <p><code>cd /usr/local/cpanel/3rdparty/csonic/tools</code></p>
+      <p><code>pico horacerta_config.php</code></p>
+      <p><textarea class="form-control" rows="4" onclick="this.focus();this.select()" readonly="readonly"><?php
+$ip = 'ip do servidor'; //ip servidor
+$pass = 'senha root'; //senha whm
+?></textarea></p>
+      <p>Crontab (evitar excluir o sistema a cada atualização do WHMSonic e atualiza o sistema):</p>
+      <p><code>crontab -e</code></p>
+      <p><textarea class="form-control" rows="1" onclick="this.focus();this.select()" readonly="readonly">0 0 * * * sh /usr/local/cpanel/3rdparty/csonic/tools/update.sh</textarea></p>
+
+<div class="mt-1">
+        <h1>Hora Certa - Remover</h1>
+      </div>
+      <p>Instalar:</p>
+      <p><code>cd /usr/local/cpanel/3rdparty/csonic/tools/</code></p>
+      <p><code>./remove.sh</code></p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy; 2016 - Ninjas Host</span>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
