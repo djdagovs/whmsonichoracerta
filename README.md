@@ -8,7 +8,7 @@ Hora Certa pro WHMSonic
 * Projeto descontinuado!
 
 ## Usando
-###### Ativando
+###### Instalando
 Todo os passos de instalação você [confere aqui](https://ninjashost.github.io/whmsonichoracerta/).
 
 ###### Ativando
