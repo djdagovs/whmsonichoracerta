@@ -1,5 +1,5 @@
 # Hora Certa - WHMSonic
-Hora Certa pro WHMSonic
+![Imagem do Hora Certa pro WHMSonic](http://i.imgur.com/QhQ2rRk.png)
 
 ## Status
 * 0.1 (Beta) - Laçamento [20/11/2016]
