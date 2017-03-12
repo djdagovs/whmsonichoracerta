@@ -12,6 +12,7 @@ Hora Certa pro WHMSonic
 1. Crie a playlist (ela não pode ser alterada futuramente)
 2. Vá em Hora Certa no WHMSonic e configure conforme.
 3. Ative o AutoDJ, caso já esteja ativo, reinicie e desfrute.
+
 ###### Desativando
 1. Vá em Hora Certa no WHMSonic e em Remover Hora Certa, selecione a playlist configurada e clique em remover.
 2. Vá em sua playlist aperte o botão "Reload The Playlist" e apaque os itens: hora.mp3 e minuto.mp3
