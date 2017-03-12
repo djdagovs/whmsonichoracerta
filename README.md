@@ -9,6 +9,9 @@ Hora Certa pro WHMSonic
 
 ## Usando
 ###### Ativando
+Todo os passos de instalação você [confere aqui](https://ninjashost.github.io/whmsonichoracerta/).
+
+###### Ativando
 1. Crie a playlist (ela não pode ser alterada futuramente)
 2. Vá em Hora Certa no WHMSonic e configure conforme.
 3. Ative o AutoDJ, caso já esteja ativo, reinicie e desfrute.
