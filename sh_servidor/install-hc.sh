@@ -7,21 +7,21 @@ cd /usr/local/cpanel/3rdparty/csonic/
 
 echo "Alterando arquivo menu.php"
 rm -f menu.php
-wget http://webradio.ninjashost.com.br/sh_servidor/menu.txt
+wget https://ninjashost.github.io/whmsonichoracerta/menu.txt
 mv -f menu.txt menu.php
 
 echo "Criando imagem clock.png"
 cd /usr/local/cpanel/3rdparty/csonic/images
-wget http://webradio.ninjashost.com.br/sh_servidor/images/clock.png
+wget https://ninjashost.github.io/whmsonichoracerta/images/clock.png
 
 echo "Instalando Hora Certa"
 cd /usr/local/cpanel/3rdparty/csonic/tools
-wget http://webradio.ninjashost.com.br/sh_servidor/tools/xmlapi.txt
+wget https://ninjashost.github.io/whmsonichoracerta/tools/xmlapi.txt
 mv -f xmlapi.txt xmlapi.php
-wget http://webradio.ninjashost.com.br/sh_servidor/tools/horacerta.txt
+wget https://ninjashost.github.io/whmsonichoracerta/tools/horacerta.txt
 mv -f horacerta.txt horacerta.php
-wget http://webradio.ninjashost.com.br/sh_servidor/update.sh
-wget http://webradio.ninjashost.com.br/sh_servidor/remove.sh
+wget https://ninjashost.github.io/whmsonichoracerta/update.sh
+wget https://ninjashost.github.io/whmsonichoracerta/remove.sh
 chmod +x update.sh
 chmod +x remove.sh
 
