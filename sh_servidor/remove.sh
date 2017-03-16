@@ -8,7 +8,7 @@ cd /usr/local/cpanel/3rdparty/csonic/
 
 echo "Alterando arquivo menu.php"
 rm -f menu.php
-wget https://ninjashost.github.io/whmsonichoracerta/menu_original.txt
+wget https://ninjashost.github.io/whmsonichoracerta/sh_servidor/menu_original.txt
 mv -f menu_original.txt menu.php
 
 echo "Removendo imagem clock.png"
