@@ -2,7 +2,7 @@
 $hor = date('H');
 $min = date('i');
 ###### BAIXAR ARQUIVO
-$source = "https://ninjashost.github.io/whmsonichoracerta/hora_certa/$voz/HRS$hor.mp3";
+$source = "http://ninjashost.github.io/whmsonichoracerta/hora_certa/".$voz."/HRS".$hor.".mp3";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $source);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -11,15 +11,15 @@ $data = curl_exec($ch);
 $error = curl_error($ch);
 curl_close($ch);
 ###### Alterar permissão
-$file= $usuario."radio/musicbase/".$ply;
+$file= "/home/".$usuario."/radio/musicbase/".$ply;
 ###### MOVER ARQUIVO
-$destination = "musicbase/$ply/hora.mp3";
-$file = fopen($usuario.$destination, "w+");
+$destination = "radio/musicbase/".$ply."/hora.mp3";
+$file = fopen("/home/".$usuario."/".$destination, "w+");
 fputs($file, $data);
 fclose($file);
 ####################
 ###### BAIXAR ARQUIVO
-$source = "https://ninjashost.github.io/whmsonichoracerta/hora_certa/$voz/MIN$min.mp3";
+$source = "http://ninjashost.github.io/whmsonichoracerta/hora_certa/".$voz."/MIN".$min.".mp3";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $source);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -28,10 +28,9 @@ $data = curl_exec($ch);
 $error = curl_error($ch);
 curl_close($ch);
 ###### MOVER ARQUIVO
-$destination = "musicbase/$ply/minuto.mp3";
-$file = fopen($usuario.$destination, "w+");
+$destination = "radio/musicbase/".$ply."/minuto.mp3";
+$file = fopen("/home/".$usuario."/".$destination, "w+");
 fputs($file, $data);
 fclose($file);
 ####################
 ?> 
-
