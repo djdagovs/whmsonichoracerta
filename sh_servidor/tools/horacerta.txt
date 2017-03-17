@@ -561,6 +561,7 @@ $arquivo="/home/$cheat254/radio/hc.php";
 $linhas=file($arquivo);
 $escrever="
 <?php
+\$usuario  = \"$cheat254\";
 \$repetir  = \"$repetir\";
 \$ply = \"$playlst\";
 \$voz = \"$voz\";
