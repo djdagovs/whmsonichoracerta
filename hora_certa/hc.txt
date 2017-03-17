@@ -11,10 +11,10 @@ $data = curl_exec($ch);
 $error = curl_error($ch);
 curl_close($ch);
 ###### Alterar permissão
-$file= $_SERVER['DOCUMENT_ROOT']."radio/musicbase/".$ply;
+$file= $usuario."radio/musicbase/".$ply;
 ###### MOVER ARQUIVO
 $destination = "musicbase/$ply/hora.mp3";
-$file = fopen($_SERVER['DOCUMENT_ROOT'].$destination, "w+");
+$file = fopen($usuario.$destination, "w+");
 fputs($file, $data);
 fclose($file);
 ####################
@@ -29,7 +29,7 @@ $error = curl_error($ch);
 curl_close($ch);
 ###### MOVER ARQUIVO
 $destination = "musicbase/$ply/minuto.mp3";
-$file = fopen($_SERVER['DOCUMENT_ROOT'].$destination, "w+");
+$file = fopen($usuario.$destination, "w+");
 fputs($file, $data);
 fclose($file);
 ####################
