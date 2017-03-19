@@ -25,7 +25,7 @@ Todo os passos de instalação você [confere aqui](https://ninjashost.github.io
 > No AutoDJ a opção Shuffle tem que ficar em OFF, pois ela vai distribuir aletoriamente as músicas e como conseguência a Hora Certa não coincidirá corretamente com o horário.
 > Já mais por hipotese alguma, use a opção "Reload The Playlist" que ficar nas opções de Playlist, pois remove parcialmente o Hora Certa.
 > 
-> Caso vc queira sem horário de verão selecione em Timezone a opção "(GMT-3:00) America/Araguaina (Brasilia Time)" ou "(GMT-3:00) America/Belem (Brasilia Time)". O horário de verão é automático, conforme a regra global: https://www.timeanddate.com/worldclock/brazil e https://www.timeanddate.com/time/zone/brazil
+> Caso vc queira sem horário de verão selecione em Timezone a opção "(GMT-3:00) America/Araguaina (Brasilia Time)" ou "(GMT-3:00) America/Belem (Brasilia Time)". O horário de verão é automático, conforme a data configurada no seu servidor e a regra global: https://www.timeanddate.com/worldclock/brazil e https://www.timeanddate.com/time/zone/brazil
 
 ## Link Úteis
 * [WHMSonic](https://whmsonic.com)
