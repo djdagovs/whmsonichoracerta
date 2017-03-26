@@ -14,6 +14,8 @@ mv -f menu_original.txt menu.php
 echo "Removendo imagem clock.png"
 cd /usr/local/cpanel/3rdparty/csonic/images
 rm -f clock.png
+rm -f player_topo.png
+rm -f programetes.png
 
 echo "Removendo Hora Certa"
 cd /usr/local/cpanel/3rdparty/csonic/tools
