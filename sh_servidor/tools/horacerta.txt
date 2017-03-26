@@ -47,7 +47,7 @@ $weekday = "*";
 
 if(file_exists("/home/".$cheat254."/radio/hc.php")){
     //existe
-    echo "<div align='center'><font color='8BC34A'><b>Hora Certa Ativada!</b></font></div> ";
+    echo "<div align='center'><font color='8BC34A'><b>Hora Certa Ativada!</b></font></div><div align="center" class="info"><b>Ativo na Playlist <font color="0000FF"><?php if (!empty($ply)) { echo $ply; } else { echo "nenhuma"; } ?>, repetindo a cada <?php if (!empty($repetir)) { echo $repetir; } else { echo "nenhuma"; } ?> música(s). A voz usada é <?php if (!empty($vozes)) { echo $vozes; } else { echo "nehuma"; } ?></div>";
 include "/home/".$cheat254."/radio/hc.php";
 	$ativarhoracerta = "display: none;";
 	$removerhoracerta = "";
@@ -64,6 +64,7 @@ else
   </tr>
 </table>
 <center><p>Se sua rádio for externa, peça para o suporte técnico adicionar a seguinte linha no <b>crontab -e</b> do root<b> * * * * * <?php echo $command; ?></b></center>
+<br>
 <br>
 
       <table style="<?php echo $ativarhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
@@ -594,7 +595,6 @@ echo"<meta http-equiv='refresh' content='5'><br><br><br><font face='Arial' size=
                 <table width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
                   <tr>
                     <td width="50%" bgcolor="f0f0f0"><div align="center">
-                      <label></label>
                       <table style="<?php echo $removerhoracerta;?>" width="100%" border="0" cellpadding="0" cellspacing="0" class="groupbox">
                         <tr>
                           <td><div align="center">Remover Hora Certa</div></td>
@@ -618,7 +618,6 @@ echo"</select>"; ?>
                     </div></td>
                     </tr>
                 </table>
-                <label></label>
               </form>
 <?php if (!empty($_POST['remove-submit'])) {
 
