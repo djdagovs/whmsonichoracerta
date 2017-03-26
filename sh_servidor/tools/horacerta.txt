@@ -62,7 +62,7 @@ else
 <center><p>Se sua rádio for externa, peça para o suporte técnico adicionar a seguinte linha no <b>crontab -e</b> do root<b> * * * * * <?php echo $command; ?></b></center>
 <br>
 
-      <table width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
+      <table  style="<?php echo $ativarhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
               <tr>
                 <td width="48%" valign="top"><div align="center">
                     <form action="horacerta.php" name="ativar" method="post">
@@ -502,11 +502,11 @@ echo"</select>"; ?> <b>Ativa: <font color="0000FF"><?php if (!empty($ply)) { ech
 <option value='Asia/Kamchatka'>(GMT+12:00) Asia/Kamchatka (Petropavlovsk-Kamchatski Time)</option>
 </select>
                           </b></b></td></tr>
-                      </table>
-                      <br />
+			<br />
                       <label>
                       <input name="ativa-submit" type="submit" class="button" id="ativa-submit" value="Salvar" />
                       </label>
+                      </table>
                       <br />
                   </form>
 <?php
@@ -573,7 +573,7 @@ $abertoa=fopen($arquivo,a);
 for($x=0;$x<count($linhas);$x++){
 fwrite($abertoa,$linhas[$x]." \n\r");
 }
-echo"<br><br><br><font face='Arial' size='2'><strong>Configurações Aplicada!</strong></font>";
+echo"<meta http-equiv='refresh' content='5'><br><br><br><font face='Arial' size='2'><strong>Configurações Aplicada!</strong></font>";
 }
 ?>
                 </div></td>
@@ -581,7 +581,7 @@ echo"<br><br><br><font face='Arial' size='2'><strong>Configurações Aplicada!</
             </table>
       
       <br />
-      <table width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
+      <table style="<?php echo $removerhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
         <tr>
           <td width="48%" valign="top"><div align="center">
               <form action="horacerta.php" name="removeform" method="post">
