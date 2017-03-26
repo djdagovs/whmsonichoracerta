@@ -596,6 +596,7 @@ echo"<meta http-equiv='refresh' content='5'><br><br><br><font face='Arial' size=
                 <br />
                 <table width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
                   <tr>
+		  <td width="50%" bgcolor="b7cbcf"><div align="right">Selecione a playlist ativa:</div></td>
                     <td width="50%" bgcolor="f0f0f0"><div align="center">
                       <table style="<?php echo $removerhoracerta;?>" width="100%" border="0" cellpadding="0" cellspacing="0" class="groupbox">
                         <tr>
@@ -613,6 +614,7 @@ else                                     {$plalst  = substr($arquivo, 0, -4); ec
    $diretorio -> close();
 echo"</select>"; ?>
                       <br />
+		     
                       <input name="remove-submit" type="submit" class="button" id="remove-submit" value="Remover Configuração" />
                       </label>
                       <br />
