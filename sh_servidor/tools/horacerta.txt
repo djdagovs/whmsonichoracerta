@@ -47,10 +47,11 @@ $weekday = "*";
 
 if(file_exists("/home/".$cheat254."/radio/hc.php")){
     //existe
-    echo '<div align="center"><font color="8BC34A"><b>Hora Certa Ativada!</b></font></div><div align="center" class="info"><b>Ativo na Playlist <font color="0000FF"><?php if (!empty($ply)) { echo $ply; } else { echo "nenhuma"; } ?>, repetindo a cada <?php if (!empty($repetir)) { echo $repetir; } else { echo "nenhuma"; } ?> música(s). A voz usada é <?php if (!empty($vozes)) { echo $vozes; } else { echo "nehuma"; } ?></div>';
+    echo '<div align="center"><font color="8BC34A"><b>Hora Certa Ativada!</b></font></div>';
 include "/home/".$cheat254."/radio/hc.php";
 	$ativarhoracerta = "display: none;";
 	$removerhoracerta = "";
+	$aviso_ativo = '<div align="center" class="info"><b>Ativo na Playlist <font color="0000FF"><?php if (!empty($ply)) { echo $ply; } else { echo "nenhuma"; } ?>, repetindo a cada <?php if (!empty($repetir)) { echo $repetir; } else { echo "nenhuma"; } ?> música(s). A voz usada é <?php if (!empty($vozes)) { echo $vozes; } else { echo "nehuma"; } ?></div>';
 }
 else
 {
@@ -65,6 +66,7 @@ else
 </table>
 <center><p>Se sua rádio for externa, peça para o suporte técnico adicionar a seguinte linha no <b>crontab -e</b> do root<b> * * * * * <?php echo $command; ?></b></center>
 <br>
+<?php echo $aviso_ativo; ?>
 <br>
 
       <table style="<?php echo $ativarhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
