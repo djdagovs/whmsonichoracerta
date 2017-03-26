@@ -51,7 +51,7 @@ echo "<div align=center class=critical>ERROR</div>"; exit; }
       <ul><li><a href='tools/autodj.php?dj=setup&list=off' target="mainFrame"><img src="images/adset.png" width="16" height="16" border="0" /> <?echo"$sonic_atls";?></a></li>
         <li><a href='tools/autodj.php' target="mainFrame"><img src="images/autodjl.jpg" width="16" height="16" border="0" /> <?echo"$im11";?></a></li>
         <li><a href='tools/playlist_manager.php' target="mainFrame"><img src="images/playlistm.jpg" width="16" height="16" border="0" /> <?echo"$playlistml";?></a></li>
-	<li><a href='tools/horacerta.php' target="mainFrame"><img src="images/clock.jpg" width="16" height="16" border="0" /> Hora Certa</a></li>
+	<li><a href='tools/horacerta.php' target="mainFrame"><img src="images/clock.png" width="16" height="16" border="0" /> Hora Certa</a></li>
 	<li><a href='tools/programetes.php' target="mainFrame"><img src="images/programetes.png" width="16" height="16" border="0" /> Programetes</a></li>
 	<li><a href='tools/player_topo.php' target="mainFrame"><img src="images/player_topo.png" width="16" height="16" border="0" /> Player de Topo</a></li>
         <li><a href='tools/dj_manager.php' target="mainFrame"><img src="images/djmanager.jpg" width="16" height="16" border="0" /></a><a href='tools/dj_manager.php' target="mainFrame"> <?echo"$djman";?></a></li>
