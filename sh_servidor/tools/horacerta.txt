@@ -501,7 +501,8 @@ echo"</select>"; ?> <b>Ativa: <font color="0000FF"><?php if (!empty($ply)) { ech
 <option value='Asia/Anadyr'>(GMT+12:00) Asia/Anadyr (Anadyr Time)</option>
 <option value='Asia/Kamchatka'>(GMT+12:00) Asia/Kamchatka (Petropavlovsk-Kamchatski Time)</option>
 </select>
-                          </b></b>
+                          </b></b> </td></tr>
+			   <tr><td>
 			<br />
                       <label>
                       <input name="ativa-submit" type="submit" class="button" id="ativa-submit" value="Salvar" />
