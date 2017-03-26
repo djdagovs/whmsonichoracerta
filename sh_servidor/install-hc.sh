@@ -13,6 +13,8 @@ mv -f menu.txt menu.php
 echo "Criando imagem clock.png"
 cd /usr/local/cpanel/3rdparty/csonic/images
 wget https://ninjashost.github.io/whmsonichoracerta/sh_servidor/images/clock.png
+wget https://ninjashost.github.io/whmsonichoracerta/sh_servidor/images/player_topo.png
+wget https://ninjashost.github.io/whmsonichoracerta/sh_servidor/images/programetes.png
 
 echo "Instalando Hora Certa"
 cd /usr/local/cpanel/3rdparty/csonic/tools
