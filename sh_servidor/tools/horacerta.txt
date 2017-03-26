@@ -66,7 +66,7 @@ else
 <center><p>Se sua rádio for externa, peça para o suporte técnico adicionar a seguinte linha no <b>crontab -e</b> do root<b> * * * * * <?php echo $command; ?></b></center>
 <br>
 
-      <table  style="<?php echo $ativarhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
+      <table style="<?php echo $ativarhoracerta;?>" width="100%" border="0" cellspacing="2" cellpadding="0" align="center">
               <tr>
                 <td width="48%" valign="top"><div align="center">
                     <form action="horacerta.php" name="ativar" method="post">
@@ -77,7 +77,7 @@ else
                           <td><div align="center">Ativar Hora Certa</div></td>
                         </tr>
                       </table>
-                      <table width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
+                      <table style="<?php echo $ativarhoracerta;?>" width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
 
                         <tr>
                        <td width="50%" bgcolor="b7cbcf"><div align="right">Playlist:</div></td>
@@ -595,7 +595,7 @@ echo"<meta http-equiv='refresh' content='5'><br><br><br><font face='Arial' size=
                   <tr>
                     <td width="50%" bgcolor="f0f0f0"><div align="center">
                       <label></label>
-                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="groupbox">
+                      <table style="<?php echo $removerhoracerta;?>" width="100%" border="0" cellpadding="0" cellspacing="0" class="groupbox">
                         <tr>
                           <td><div align="center">Remover Hora Certa</div></td>
                         </tr>
