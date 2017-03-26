@@ -1,0 +1,58 @@
+<?php header('Content-Type: text/html; charset=UTF-8'); foreach ($_REQUEST as $key=>$val) {${$key}=$val;} 
+
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/lng.php";
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/languages/$lang.lang";
+include "/usr/local/cpanel/whostmgr/docroot/whmsonic/inc/dbs.php";
+
+include "/usr/local/cpanel/3rdparty/csonic/tools/xmlapi.php";
+?>
+
+<head>
+<link type="text/css" rel="stylesheet" href="cstyle.css?r=<? $chars = "abcdefghijkmnopqrstuvwxyz023456789"; srand((double)microtime()*1000000); $i = 0; $csrou = '' ; while ($i <= 7) { $num = rand() % 33; $tmp = substr($chars, $num, 1);$csrou = $csrou . $tmp;$i++;}$styrou = $csrou; echo $styrou; ?>">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.blockUI.js"></script>
+<style type="text/css">
+.info {
+	border: 1px dashed #3a8bf9;
+	line-height:17px;
+	padding:10px;
+	background-color: #dcf1f9;
+	width: 100%;
+}
+</style>
+</head>
+<br>
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" class="subbox">
+  <tr>
+    <td class=cellheader>
+<b>Programetes</b>
+    </td>
+  </tr>
+</table>
+<center> Programetes em breve! </center>
+</table>
+<br>
+<table width="95%" border="0" align="center" cell cellspacing="0" class="sonic">
+  <tr>
+    <td>
+      <table width="39%" border="0" cellspacing="0" cellpadding="0" align="right">
+        <tr>
+          <td width="88%">
+            <div align="right"><b> <a href="../main.php">
+              <b>Menu principal</b></a>&nbsp;</b></div>          </td>
+          <td width="12%">
+            <div align="right"><img src="img/home.jpg" width="35" height="35">&nbsp;</div>          </td>
+        </tr>
+      </table>
+      <table width="61%" border="0" cellspacing="0" cellpadding="0" align="left">
+        <tr>
+          <td width="22%">
+            <div style="padding:15px;"><b> <a href="#" target="_blank"">
+              <b>Programetes (Beta)</b></a> by <a href="//ninjashost.com.br">Ninjas Host</a></b></div>          </td>
+        </tr>
+      </table>     </td>
+  </tr>
+</table>
+</body>
+</html>
