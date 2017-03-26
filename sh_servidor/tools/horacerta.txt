@@ -51,7 +51,7 @@ if(file_exists("/home/".$cheat254."/radio/hc.php")){
 include "/home/".$cheat254."/radio/hc.php";
 	$ativarhoracerta = "display: none;";
 	$removerhoracerta = "";
-	$aviso_ativo = '<div align="center" class="info"><b>Ativo na Playlist <font color="0000FF">'.$ply.', repetindo a cada '.$repetir.' música(s). A voz usada é '.$vozes.'</div>';
+	$aviso_ativo = '<div align="center" class="info"><b>Ativo na Playlist <font color="0000FF">'.$ply.'</font>, repetindo a cada <font color="0000FF">'.$repetir.'</font> música(s). A voz usada é <font color="0000FF">'.$voz.'</font>.</div>';
 }
 else
 {
