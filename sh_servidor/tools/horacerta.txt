@@ -80,7 +80,7 @@ else
                           <td><div align="center">Ativar Hora Certa</div></td>
                         </tr>
                       </table>
-                      <table style="<?php echo $ativarhoracerta;?>" width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
+                      <table width="95%" border="0" cellpadding="0" cellspacing="2" class="sonic">
 
                         <tr>
                        <td width="50%" bgcolor="b7cbcf"><div align="right">Playlist:</div></td>
