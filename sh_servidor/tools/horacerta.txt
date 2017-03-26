@@ -631,7 +631,7 @@ $minuto= "/home/$cheat254/radio/musicbase/$playlst/minuto.mp3";
 unlink("$hora");
 unlink("$minuto");
 unlink("/home/$cheat254/radio/hc.php");
-echo"<br><font face='Arial' size='2'><strong>Hora Certa removida!</strong></font>";
+echo"<meta http-equiv='refresh' content='5'><br><font face='Arial' size='2'><strong>Hora Certa removida!</strong></font>";
 } 
 ?>
           </div></td>
