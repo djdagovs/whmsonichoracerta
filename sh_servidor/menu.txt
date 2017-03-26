@@ -53,7 +53,7 @@ echo "<div align=center class=critical>ERROR</div>"; exit; }
         <li><a href='tools/playlist_manager.php' target="mainFrame"><img src="images/playlistm.jpg" width="16" height="16" border="0" /> <?echo"$playlistml";?></a></li>
         <li><a href='tools/horacerta.php' target="mainFrame"><img src="images/clock.png" width="16" height="16" border="0" /></a><a href='tools/horacerta.php' target="mainFrame"> Hora Certa</a></li>
 	<li><a href='tools/programetes.php' target="mainFrame"><img src="images/programetes.png" width="16" height="16" border="0" /></a><a href='tools/programetes.php' target="mainFrame"> Programetes</a></li>
-	<li><a href='tools/programetes.php' target="mainFrame"><img src="images/player_topo.png" width="16" height="16" border="0" /></a><a href='tools/horacerta.php' target="mainFrame"> Player de Topo</a></li>
+	<li><a href='tools/programetes.php' target="mainFrame"><img src="images/player_topo.png" width="16" height="16" border="0" /></a><a href='tools/player_topo.php' target="mainFrame"> Player de Topo</a></li>
         <li><a href='tools/dj_manager.php' target="mainFrame"><img src="images/djmanager.jpg" width="16" height="16" border="0" /></a><a href='tools/dj_manager.php' target="mainFrame"> <?echo"$djman";?></a></li>
 		<li><a href='tools/adv_main.php' target="mainFrame"><img src="images/introz.jpg" width="16" height="16" border="0" /> <?echo"$client_intro";?></a></li>
         <li><a href='tools/relay.php' target="mainFrame"><img src="images/relay.png" width="16" height="16" border="0" /> <?echo"$cpi13";?></a></li>
