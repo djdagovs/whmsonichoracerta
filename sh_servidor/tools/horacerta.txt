@@ -49,15 +49,15 @@ if(file_exists("/home/".$cheat254."/radio/hc.php")){
     //existe
     echo "<div align='center'><font color='8BC34A'><b>Hora Certa Ativada!</b></font></div> ";
 include "/home/".$cheat254."/radio/hc.php";
-	$ativarhoracerta = "none";
-	$removerhoracerta = "display";
+	$ativarhoracerta = "display: none;";
+	$removerhoracerta = "";
 }
 else
 {
     //não existe...
     echo "<div align='center'><font color='red'><b>Hora Certa Desativada!</b></font></div>";
-    $ativarhoracerta = "display";
-    $removerhoracerta = "none";
+    $ativarhoracerta = "";
+    $removerhoracerta = "display: none;";
 }
 ?>
          </td>
