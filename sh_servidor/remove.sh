@@ -19,6 +19,8 @@ echo "Removendo Hora Certa"
 cd /usr/local/cpanel/3rdparty/csonic/tools
 rm -f xmlapi.php
 rm -f horacerta.php
+rm -f programetes.php
+rm -f player_topo.php
 rm -f horacerta_config.php
 rm -f update.sh
 
