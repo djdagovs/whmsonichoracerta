@@ -3,8 +3,6 @@
 include "/usr/local/cpanel/whostmgr/docroot/whmsonic/lng.php";
 include "/usr/local/cpanel/whostmgr/docroot/whmsonic/languages/$lang.lang";
 include "/usr/local/cpanel/whostmgr/docroot/whmsonic/inc/dbs.php";
-
-include "/usr/local/cpanel/3rdparty/csonic/tools/xmlapi.php";
 ?>
 
 <head>
